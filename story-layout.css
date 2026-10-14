@@ -39,3 +39,8 @@
 .chapter-build-photos{max-width:360px;margin:auto}
 .story-follow{padding:30px 22px;border-radius:20px;margin-bottom:30px}
 }
+
+/* DCBO keeps the personal object compact and follows the alternating photo rhythm. */
+.story-page .dcbo-mug-photo{max-width:235px;padding:0 8px}
+.story-page .dcbo-mug-photo img{width:100%;height:auto;max-height:350px;object-fit:contain;border-radius:0;background:transparent}
+@media(max-width:700px){.story-page .dcbo-mug-photo{max-width:210px}.story-page .dcbo-mug-photo img{max-height:310px}}
