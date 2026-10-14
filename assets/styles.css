@@ -192,3 +192,55 @@ nav a:hover,.text-link:hover{color:var(--green)}
 .portfolio-page #walnut-cutting-boards .build-gallery a:first-child .project-crop,
 .portfolio-page #blanket-chest .build-gallery a:first-child .project-crop{border-radius:20px}
 }
+
+/* Sage section rhythm across DiSibio Builds. */
+:root{--sage:#E2EBE3;--pale:#EFF3EF}
+.home-page .home-verse{max-width:none;margin:12px 0 4px;padding:22px 32px 24px;background:var(--pale);border-radius:22px}
+.home-page .home-verse:before{content:'“';display:block;color:var(--green);font:700 42px/1 Georgia,serif;height:32px;margin-bottom:8px}
+.home-page .home-verse p{max-width:850px;margin:0 auto;color:#354B3F;font-size:16px}
+.home-page .home-verse cite{color:var(--green)}
+.home-page .home-flow{padding-top:14px}
+.home-page .home-row{padding:40px 24px;margin:10px 0;gap:clamp(28px,5vw,64px)}
+.home-page .home-row:nth-child(even){background:var(--sage);border-radius:26px;padding:32px}
+.home-page .home-row:first-child .home-row-figure{position:relative;isolation:isolate}
+.home-page .home-row:first-child .home-row-figure:before{content:'';position:absolute;top:-12px;right:0;width:80%;height:95%;border-radius:48% 52% 42% 58%;background:var(--pale);z-index:-1}
+.home-page .home-follow,.portfolio-page .portfolio-follow{background:var(--green);color:#fff;border-radius:26px;margin:20px 0 42px;padding:36px 32px;position:relative;overflow:hidden}
+.home-page .home-follow .eyebrow{color:#DCE8DF}
+.home-page .home-follow p,.portfolio-page .portfolio-follow p{color:#E2EBE3}
+.home-page .home-follow-links{gap:12px;margin-top:22px}
+.home-page .home-follow-links a{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border:1px solid #ffffff99;border-radius:999px;color:#fff;font-size:13px;text-decoration:none}
+.home-page .home-follow-links a:first-child{background:#fff;color:var(--green);border-color:#fff}
+.home-page .home-follow-links a:hover{background:var(--pale);color:var(--green)}
+.portfolio-page .portfolio-follow a{color:#fff;text-decoration-thickness:1px}
+.portfolio-page .intro,.story-page .intro,.contact-page .intro{background:var(--pale);border-radius:26px;max-width:none;padding:36px 32px;margin:24px 0 28px}
+.portfolio-page .intro h1,.story-page .intro h1,.contact-page .intro h1{margin-top:14px}
+.portfolio-page .portfolio-index{padding:0 10px;margin-bottom:20px}
+.portfolio-page .portfolio-index a{background:#fff;border-color:var(--line)}
+.portfolio-page .portfolio-index a:hover{background:var(--sage)}
+.portfolio-page .portfolio-build{padding:34px 28px;margin:14px 0;gap:clamp(28px,5vw,60px)}
+.portfolio-page .portfolio-build:nth-child(even){background:var(--sage);border-radius:26px}
+.story-page .prose{max-width:740px}
+.story-page .story-topic{padding:10px 24px 22px;margin:0 0 18px}
+.story-page .story-topic:nth-child(even){background:var(--pale);border-radius:24px;padding:22px 24px}
+.story-page .story-topic h2{margin-top:12px}
+.story-page .about-family{margin-top:12px}
+.contact-page .prose{max-width:none;padding:8px 0 42px}
+.contact-page .contact-links{background:var(--sage);padding:26px 28px;border-radius:24px;gap:12px;align-items:center}
+.contact-page .contact-links .button{margin-top:0}
+.contact-page .contact-links .button.secondary{border-color:#ABBEB0;color:var(--green)}
+.contact-page .prose>p,.contact-page .prose>h2{margin-left:28px;margin-right:28px}
+.contact-page .prose>p{max-width:640px}
+@media(max-width:700px){
+.home-page .home-verse{padding:20px 18px;border-radius:20px}
+.home-page .home-verse p{font-size:15px}
+.home-page .home-row,.home-page .home-row:nth-child(even){padding:28px 20px;margin:10px 0;border-radius:20px;gap:24px}
+.home-page .home-row:first-child .home-row-figure:before{right:3%;width:85%}
+.home-page .home-follow,.portfolio-page .portfolio-follow{padding:30px 22px;border-radius:20px;margin-bottom:30px}
+.portfolio-page .intro,.story-page .intro,.contact-page .intro{padding:26px 22px;border-radius:20px;margin-top:18px}
+.portfolio-page .portfolio-build{padding:28px 20px;margin:12px 0}
+.portfolio-page .portfolio-build:nth-child(even){border-radius:20px}
+.portfolio-page .portfolio-index{padding:0}
+.story-page .story-topic,.story-page .story-topic:nth-child(even){padding:18px 20px;border-radius:20px}
+.contact-page .contact-links{padding:22px 20px;border-radius:20px}
+.contact-page .prose>p,.contact-page .prose>h2{margin-left:20px;margin-right:20px}
+}
