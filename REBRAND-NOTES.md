@@ -1,13 +1,11 @@
-# DiSibio Builds — first rebrand update
+# DiSibio Builds logo and social update
 
-Upload the CONTENTS of this folder at the repository root, including assets. Do not upload the enclosing folder or ZIP. Commit changes. The existing CNAME is already disibiobuilds.com and is deliberately excluded.
+Upload the CONTENTS of this folder at the repository root, including assets. Do not upload the enclosing folder or ZIP. Commit changes. The existing CNAME is deliberately excluded.
 
-Home is rebranded. Navigation links to portfolio.html and story.html. Existing project photographs and descriptions are carried forward; the detailed portfolio descriptions and chronological Story are the next content pass. Old projects.html and about.html forward to the new pages.
+Includes all current rebrand pages, the full approved circular logo in every header, the DCBO mark in the favicon and footer, and links to https://www.youtube.com/@disibiobuilds and https://www.instagram.com/disibiobuilds/.
 
-The banner and family photograph use the existing privacy-edited assets. This package adds no original/unblurred family photos.
+The original installation banner and privacy-edited family photo remain in use. The YouTube screenshot is a design reference, not a website image; it is not included.
 
-Approved circular logo files have not been supplied yet. The header uses a text wordmark and the favicon uses temporary DB initials; neither is intended to replace the approved logos.
+Portfolio retains the existing completed builds. Additional project photos and user-supplied descriptions can be added next. Story retains the existing personal copy and family heritage passage; a detailed chronological story awaits dates and early-build details.
 
-Existing social URLs are retained pending the exact renamed Instagram and YouTube URLs. Renaming an account display name does not necessarily change its URL. Supply both exact links before updating those targets.
-
-The old woodandworking.com domain redirect must be set up separately in Cloudflare. This package does not change DNS or domain redirects.
+No DNS or domain redirect changes are included.
