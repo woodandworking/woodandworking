@@ -244,3 +244,7 @@ nav a:hover,.text-link:hover{color:var(--green)}
 .contact-page .contact-links{padding:22px 20px;border-radius:20px}
 .contact-page .prose>p,.contact-page .prose>h2{margin-left:20px;margin-right:20px}
 }
+/* Remove the green shape behind the Meet Steve photo. */
+.home-page .home-row:first-child .home-row-figure::before {
+  display: none;
+}
