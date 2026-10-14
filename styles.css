@@ -76,3 +76,216 @@ header .brand-with-logo{display:flex;align-items:center;gap:13px;font-size:20px;
 .portfolio-follow{padding:30px 0 45px}
 }
 @media(prefers-reduced-motion:reduce){.portfolio-page .project-crop img{transition:none}}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/manrope-400.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/manrope-500.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/manrope-600.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/manrope-700.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/manrope-800.ttf) format('truetype');
+}
+
+
+/* Modern DiSibio Builds palette and self-hosted Manrope typography. */
+:root{--cream:#FAFAF8;--ink:#242824;--green:#294638;--wood:#294638;--muted:#686D69;--line:#E2E5E2;--pale:#EFF3EF}
+body{background:var(--cream);font-family:'Manrope',system-ui,-apple-system,sans-serif;color:var(--ink)}
+h1,h2,h3,.brand{font-family:'Manrope',system-ui,sans-serif;font-weight:700;letter-spacing:-.035em}
+h1{line-height:1.12}h2,h3{line-height:1.2}
+header{padding-top:20px;padding-bottom:20px}
+header .brand-with-logo span{font-weight:800}
+.eyebrow,.status,.build-meta,.portfolio-page .build-copy .build-meta{color:var(--green)}
+.eyebrow{font-weight:700;letter-spacing:.13em}
+a:focus-visible{outline-color:var(--green)}
+nav a[aria-current=page]{border-color:var(--green)}
+nav a:hover,.text-link:hover{color:var(--green)}
+.button,.social-nav a{border-radius:999px}
+.button{background:var(--green);color:#fff;border:1px solid var(--green);font-weight:650}
+.button:hover,.social-nav .social-youtube:hover{background:#1E352A;color:#fff}
+.button.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.button.secondary:hover,.social-nav .social-instagram:hover{background:var(--pale);color:var(--green);border-color:var(--green)}
+.social-nav .social-youtube{background:var(--green);color:#fff}
+.social-nav .social-instagram{color:var(--green)}
+.statement{background:var(--green);color:#fff;border-left:0;border-radius:24px}
+.statement a{color:#fff}
+.note,.heritage-section{background:var(--pale);border-color:var(--green)}
+.follow-grid a:hover,.portfolio-index a:hover{background:var(--pale)}
+.built-grid article{background:transparent;border-color:var(--line)}
+.home-row-copy p,.portfolio-page .build-copy p{line-height:1.8}
+.project-photo,.story-photo,.about-family img,.home-row-figure>img,.steve-photo-window{border:0;box-shadow:none;border-radius:26px}
+.hero figure:before{display:none}
+.hero .hall-photo{border:0;box-shadow:none;border-radius:26px}
+.box-story .project-photo{border:0;border-radius:20px}
+.portfolio-page .build-gallery a:first-child .project-crop,
+.portfolio-page #hall-tree .project-crop,
+.portfolio-page #walnut-cutting-boards .build-gallery a:first-child .project-crop,
+.portfolio-page #blanket-chest .build-gallery a:first-child .project-crop{border-radius:26px}
+.portfolio-page .project-crop{border-radius:18px;background:var(--pale)}
+.portfolio-page .build-gallery a:focus-visible{border-radius:26px}
+/* Keep the builder visible on the right and reserve the left for the brand. */
+.home-page .photo-banner{min-height:430px;margin-top:24px;border-radius:24px;background:var(--green);display:block}
+.banner-photo-window{position:absolute;inset:0 0 0 auto;width:60%;height:100%;overflow:hidden;z-index:-3}
+.banner-photo-window img{position:absolute;width:100%;height:145%;top:-31%;left:0;object-fit:cover;object-position:43% 42%;max-width:none}
+.home-page .banner-shade{background:linear-gradient(90deg,#294638 0%,#294638 32%,#294638ec 43%,#29463870 58%,#29463815 78%)}
+.home-page .banner-copy{position:relative;width:57%;max-width:none;padding:44px 32px;color:#fff}
+.home-page .banner-copy .eyebrow{color:#E2E5E2}
+.home-page .banner-copy .disibio-wordmark{font-size:clamp(1.8rem,3.1vw,2.75rem);font-weight:800;letter-spacing:.12em;line-height:1.24;margin:24px 0 20px;max-width:490px}
+.home-page .banner-copy .banner-tagline{font-size:clamp(1.4rem,2.35vw,2rem);font-weight:700;line-height:1.25;margin:0 0 18px}
+.home-page .banner-description{font-size:16px;max-width:390px;color:#fff;line-height:1.65;margin-bottom:26px}
+.home-page .banner-actions{gap:10px}
+.home-page .banner-actions .button{background:#fff;color:#242824;border:1px solid #fff;font-weight:700;padding:12px 17px;font-size:12px}
+.home-page .banner-actions .button.secondary{background:#29463880;color:#fff;border-color:#ffffffb3}
+.home-page .banner-actions .button:hover{background:#EFF3EF;color:#294638}
+.home-verse{position:static;width:auto;max-width:800px;margin:0 auto;padding:26px 20px 8px;border:0;background:transparent;text-align:center;color:var(--muted)}
+.home-verse p{font:italic 16px/1.75 Georgia,serif;max-width:none;margin:0}
+.home-verse cite{display:block;font:600 12px/1.6 'Manrope',sans-serif;font-style:normal;color:var(--green);margin-top:8px}
+.home-follow{background:var(--pale);border-radius:26px;padding:34px 24px 40px;margin:10px 0 42px}
+.home-follow-links a{color:var(--green)}
+@media(max-width:900px) and (min-width:701px){
+.home-page .banner-copy{width:61%;padding:34px 26px}
+.home-page .banner-copy .disibio-wordmark{font-size:1.9rem;letter-spacing:.08em}
+.home-page .banner-copy .banner-tagline{font-size:1.6rem}
+.home-page .banner-description{max-width:300px;font-size:15px}
+}
+@media(max-width:700px){
+.home-page .photo-banner{min-height:540px;display:flex;align-items:flex-end;border-radius:20px}
+.banner-photo-window{inset:0;width:100%;height:100%}
+.banner-photo-window img{width:100%;height:140%;top:-25%;object-fit:cover;object-position:43% 38%}
+.home-page .banner-shade{background:linear-gradient(0deg,#1E352A 0%,#1E352Aed 32%,#2946386b 60%,#29463812 100%)}
+.home-page .banner-copy{width:100%;max-width:none;padding:28px 22px}
+.home-page .banner-copy .disibio-wordmark{font-size:clamp(1.65rem,5vw,2.15rem);letter-spacing:.1em;margin:14px 0 16px}
+.home-page .banner-copy .banner-tagline{font-size:1.4rem}
+.home-page .banner-description{font-size:14px;max-width:350px;margin-bottom:20px}
+.home-page .banner-actions .button{padding:10px 13px;font-size:11px}
+.home-verse{padding:22px 4px 6px}.home-verse p{font-size:15px}
+.home-follow{padding:30px 18px;margin-bottom:30px}
+.project-photo,.story-photo,.about-family img,.home-row-figure>img,.steve-photo-window{border-radius:20px}
+.portfolio-page .build-gallery a:first-child .project-crop,
+.portfolio-page #hall-tree .project-crop,
+.portfolio-page #walnut-cutting-boards .build-gallery a:first-child .project-crop,
+.portfolio-page #blanket-chest .build-gallery a:first-child .project-crop{border-radius:20px}
+}
+
+/* Sage section rhythm across DiSibio Builds. */
+:root{--sage:#E2EBE3;--pale:#EFF3EF}
+.home-page .home-verse{max-width:none;margin:12px 0 4px;padding:22px 32px 24px;background:var(--pale);border-radius:22px}
+.home-page .home-verse:before{content:'“';display:block;color:var(--green);font:700 42px/1 Georgia,serif;height:32px;margin-bottom:8px}
+.home-page .home-verse p{max-width:850px;margin:0 auto;color:#354B3F;font-size:16px}
+.home-page .home-verse cite{color:var(--green)}
+.home-page .home-flow{padding-top:14px}
+.home-page .home-row{padding:40px 24px;margin:10px 0;gap:clamp(28px,5vw,64px)}
+.home-page .home-row:nth-child(even){background:var(--sage);border-radius:26px;padding:32px}
+.home-page .home-row:first-child .home-row-figure{position:relative;isolation:isolate}
+.home-page .home-row:first-child .home-row-figure:before{content:'';position:absolute;top:-12px;right:0;width:80%;height:95%;border-radius:48% 52% 42% 58%;background:var(--pale);z-index:-1}
+.home-page .home-follow,.portfolio-page .portfolio-follow{background:var(--green);color:#fff;border-radius:26px;margin:20px 0 42px;padding:36px 32px;position:relative;overflow:hidden}
+.home-page .home-follow .eyebrow{color:#DCE8DF}
+.home-page .home-follow p,.portfolio-page .portfolio-follow p{color:#E2EBE3}
+.home-page .home-follow-links{gap:12px;margin-top:22px}
+.home-page .home-follow-links a{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border:1px solid #ffffff99;border-radius:999px;color:#fff;font-size:13px;text-decoration:none}
+.home-page .home-follow-links a:first-child{background:#fff;color:var(--green);border-color:#fff}
+.home-page .home-follow-links a:hover{background:var(--pale);color:var(--green)}
+.portfolio-page .portfolio-follow a{color:#fff;text-decoration-thickness:1px}
+.portfolio-page .intro,.story-page .intro,.contact-page .intro{background:var(--pale);border-radius:26px;max-width:none;padding:36px 32px;margin:24px 0 28px}
+.portfolio-page .intro h1,.story-page .intro h1,.contact-page .intro h1{margin-top:14px}
+.portfolio-page .portfolio-index{padding:0 10px;margin-bottom:20px}
+.portfolio-page .portfolio-index a{background:#fff;border-color:var(--line)}
+.portfolio-page .portfolio-index a:hover{background:var(--sage)}
+.portfolio-page .portfolio-build{padding:34px 28px;margin:14px 0;gap:clamp(28px,5vw,60px)}
+.portfolio-page .portfolio-build:nth-child(even){background:var(--sage);border-radius:26px}
+.story-page .prose{max-width:740px}
+.story-page .story-topic{padding:10px 24px 22px;margin:0 0 18px}
+.story-page .story-topic:nth-child(even){background:var(--pale);border-radius:24px;padding:22px 24px}
+.story-page .story-topic h2{margin-top:12px}
+.story-page .about-family{margin-top:12px}
+.contact-page .prose{max-width:none;padding:8px 0 42px}
+.contact-page .contact-links{background:var(--sage);padding:26px 28px;border-radius:24px;gap:12px;align-items:center}
+.contact-page .contact-links .button{margin-top:0}
+.contact-page .contact-links .button.secondary{border-color:#ABBEB0;color:var(--green)}
+.contact-page .prose>p,.contact-page .prose>h2{margin-left:28px;margin-right:28px}
+.contact-page .prose>p{max-width:640px}
+@media(max-width:700px){
+.home-page .home-verse{padding:20px 18px;border-radius:20px}
+.home-page .home-verse p{font-size:15px}
+.home-page .home-row,.home-page .home-row:nth-child(even){padding:28px 20px;margin:10px 0;border-radius:20px;gap:24px}
+.home-page .home-row:first-child .home-row-figure:before{right:3%;width:85%}
+.home-page .home-follow,.portfolio-page .portfolio-follow{padding:30px 22px;border-radius:20px;margin-bottom:30px}
+.portfolio-page .intro,.story-page .intro,.contact-page .intro{padding:26px 22px;border-radius:20px;margin-top:18px}
+.portfolio-page .portfolio-build{padding:28px 20px;margin:12px 0}
+.portfolio-page .portfolio-build:nth-child(even){border-radius:20px}
+.portfolio-page .portfolio-index{padding:0}
+.story-page .story-topic,.story-page .story-topic:nth-child(even){padding:18px 20px;border-radius:20px}
+.contact-page .contact-links{padding:22px 20px;border-radius:20px}
+.contact-page .prose>p,.contact-page .prose>h2{margin-left:20px;margin-right:20px}
+}
+/* Remove the green shape behind the Meet Steve photo. */
+.home-page .home-row:first-child .home-row-figure::before {
+  display: none;
+}
+
+/* Story: chronological chapters, real project photos and family history. */
+.story-chapters{padding:0 0 12px}
+.story-page .story-chapter{padding:30px 28px;margin:16px 0}
+.story-page .story-chapter:nth-child(even){background:var(--pale);border-radius:26px}
+.story-page .chapter-copy{max-width:720px;min-width:0}
+.story-page .chapter-copy h2{font-size:clamp(27px,3vw,35px);line-height:1.2;margin:12px 0 22px}
+.story-page .chapter-copy p:not(.eyebrow){font-size:16px;line-height:1.85;color:var(--muted);margin:0 0 16px}
+.story-page .chapter-copy p:last-child{margin-bottom:0}
+.story-page .chapter-with-photo{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,58px);align-items:center}
+.story-page .chapter-photo{margin:0;max-width:310px;justify-self:center;min-width:0;width:100%}
+.story-page .chapter-photo img{display:block;width:100%;height:auto;object-fit:cover;border-radius:24px}
+.story-page .chapter-photo-first{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.story-page .chapter-photo-first .chapter-photo{grid-column:1;grid-row:1}
+.story-page .chapter-photo-first .chapter-copy{grid-column:2;grid-row:1}
+.story-page .grandfather-photo{max-width:280px}
+.story-page .family-story-photo img{max-height:400px;object-position:center 42%}
+.story-page figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:10px}
+.chapter-build-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.chapter-build-photos figure{margin:0;min-width:0}
+.chapter-build-photos>figure>img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 45%;border-radius:18px}
+.story-hall-window{position:relative;aspect-ratio:581/845;border-radius:18px;overflow:hidden}
+.story-hall-window img{position:absolute;width:122%;height:182%;max-width:none;left:-10%;top:-38%;object-fit:fill}
+.story-follow{background:var(--green);color:#fff;border-radius:26px;padding:34px 28px;margin:20px 0 42px;text-align:center}
+.story-follow h2{font-size:clamp(27px,3vw,35px);margin:0 0 18px}
+.story-follow p{color:#E2EBE3;margin:0 auto;max-width:570px;font-size:15px}
+.story-follow-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px}
+.story-follow-links a{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border:1px solid #ffffff99;border-radius:999px;color:#fff;font-size:13px;text-decoration:none}
+.story-follow-links a:first-child{background:#fff;color:var(--green);border-color:#fff}
+.story-follow-links a:hover{background:var(--pale);color:var(--green)}
+@media(max-width:700px){
+.story-page .story-chapter{padding:26px 20px;margin:12px 0}
+.story-page .story-chapter:nth-child(even){border-radius:20px}
+.story-page .chapter-with-photo,.story-page .chapter-photo-first{grid-template-columns:1fr;gap:24px}
+.story-page .chapter-photo-first .chapter-photo,.story-page .chapter-photo-first .chapter-copy{grid-column:auto;grid-row:auto}
+.story-page .chapter-copy p:not(.eyebrow){font-size:15px}
+.story-page .chapter-photo{max-width:290px}
+.story-page .grandfather-photo{max-width:250px}
+.chapter-build-photos{max-width:360px;margin:auto}
+.story-follow{padding:30px 22px;border-radius:20px;margin-bottom:30px}
+}
