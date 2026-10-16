@@ -13,7 +13,7 @@
 .story-page .chapter-photo-first{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
 .story-page .chapter-photo-first .chapter-photo{grid-column:1;grid-row:1}
 .story-page .chapter-photo-first .chapter-copy{grid-column:2;grid-row:1}
-.story-page .grandfather-photo{max-width:280px}
+
 .story-page .family-story-photo img{max-height:400px;object-position:center 42%}
 .story-page figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:10px}
 .chapter-build-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
@@ -35,15 +35,10 @@
 .story-page .chapter-photo-first .chapter-photo,.story-page .chapter-photo-first .chapter-copy{grid-column:auto;grid-row:auto}
 .story-page .chapter-copy p:not(.eyebrow){font-size:15px}
 .story-page .chapter-photo{max-width:290px}
-.story-page .grandfather-photo{max-width:250px}
+
 .chapter-build-photos{max-width:360px;margin:auto}
 .story-follow{padding:30px 22px;border-radius:20px;margin-bottom:30px}
 }
-
-/* DCBO keeps the personal object compact and follows the alternating photo rhythm. */
-.story-page .dcbo-mug-photo{max-width:235px;padding:0 8px}
-.story-page .dcbo-mug-photo img{width:100%;height:auto;max-height:350px;object-fit:contain;border-radius:0;background:transparent}
-@media(max-width:700px){.story-page .dcbo-mug-photo{max-width:210px}.story-page .dcbo-mug-photo img{max-height:310px}}
 
 /* Family photograph and introduction in the Story hero. */
 .story-page .story-hero{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);min-height:390px;border-radius:24px;overflow:hidden;background:var(--green);color:#fff;margin:24px 0 28px;isolation:isolate}
@@ -56,3 +51,8 @@
 .story-hero-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#29463890 0%,#29463800 18%);pointer-events:none}
 @media(max-width:900px) and (min-width:701px){.story-hero-copy{padding:28px 22px}.story-page .story-hero-copy h1{font-size:2.1rem}.story-page .story-hero-description{font-size:14px}.story-page .story-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 @media(max-width:700px){.story-page .story-hero{grid-template-columns:1fr;min-height:0;border-radius:20px;margin:18px 0 24px}.story-hero-photo{order:-1;min-height:0;aspect-ratio:1584/993}.story-hero-photo img{object-fit:contain}.story-hero-photo:after{display:none}.story-hero-copy{padding:26px 24px 30px}.story-page .story-hero-copy h1{font-size:2.15rem;margin-bottom:20px}.story-page .story-hero-copy .eyebrow{margin-bottom:14px}.story-page .story-hero-description{font-size:14px;max-width:none}}
+
+/* Preserve alternating photo order after the story rollback. */
+.story-page .chapter-photo-first .chapter-build-photos{grid-column:1;grid-row:1}
+.story-page .early-build-photo img{max-height:350px;object-fit:cover;object-position:center}
+@media(max-width:700px){.story-page .chapter-photo-first .chapter-build-photos{grid-column:auto;grid-row:auto}}

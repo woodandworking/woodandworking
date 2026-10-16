@@ -1,1 +1,11 @@
-Open this unzipped folder. Upload the four HTML files and assets folder to the ROOT of woodandworking/woodandworking using Add file > Upload files. Do not upload the enclosing folder or ZIP. Commit changes. Existing banner, logos, and portfolio photographs remain in place. Domain settings are not included. Home redesigned; other pages only remove Plano references and update stylesheet version.
+WOOD & WORKING BRANDING ROLLBACK
+
+1. Unzip and OPEN the downloaded folder.
+2. In the repository ROOT, choose Add file > Upload files.
+3. Upload the seven HTML files, the assets folder, and this instructions file. Do not upload the ZIP or its enclosing folder.
+4. Commit changes. Keep your existing CNAME file (woodandworking.com).
+5. After publishing finishes, refresh with Command + Shift + R.
+
+The assets folder contains BOTH stylesheets and BOTH Wood & Working logos.
+No DNS, hosting, or email settings need changing.
+Old social URLs have been removed until replacement URLs are supplied.
