@@ -1,0 +1,6 @@
+.portfolio-page #garage-workshop-wall .build-gallery{max-width:470px}
+.portfolio-page #garage-workshop-wall .build-gallery>a:first-child{max-width:none}
+.portfolio-page #garage-workshop-wall .project-crop{border-radius:20px}
+.portfolio-page #garage-workshop-wall .hero-wall-caption{display:block;font-size:.875rem;line-height:1.4;color:var(--muted);margin:.5rem 0 0}
+.portfolio-page #garage-workshop-wall .build-copy>p:not(.build-meta){font-size:1rem}
+@media(max-width:700px){.portfolio-page #garage-workshop-wall .build-gallery{max-width:470px}}
