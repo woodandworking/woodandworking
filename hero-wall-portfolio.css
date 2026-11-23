@@ -4,3 +4,11 @@
 .portfolio-page #garage-workshop-wall .hero-wall-caption{display:block;font-size:.875rem;line-height:1.4;color:var(--muted);margin:.5rem 0 0}
 .portfolio-page #garage-workshop-wall .build-copy>p:not(.build-meta){font-size:1rem}
 @media(max-width:700px){.portfolio-page #garage-workshop-wall .build-gallery{max-width:470px}}
+
+/* Prioritize the finished wall and cabinet detail; keep the old setup secondary. */
+.portfolio-page #garage-workshop-wall .build-gallery{grid-template-columns:minmax(0,1fr) 120px;gap:16px;align-items:start}
+.portfolio-page #garage-workshop-wall .hero-detail-photo{grid-column:1;grid-row:2}
+.portfolio-page #garage-workshop-wall .hero-before-thumb{grid-column:2;grid-row:2;align-self:end;margin-bottom:28px}
+.portfolio-page #garage-workshop-wall .hero-before-thumb .project-crop{border-radius:12px}
+.portfolio-page #garage-workshop-wall .hero-before-label{position:absolute;z-index:2;left:8px;bottom:8px;background:#1e352aeb;color:#fff;padding:4px 8px;border-radius:5px;font-size:.875rem;font-weight:700;line-height:1.2;letter-spacing:.035em}
+@media(max-width:480px){.portfolio-page #garage-workshop-wall .build-gallery{grid-template-columns:minmax(0,1fr) 88px;gap:12px}.portfolio-page #garage-workshop-wall .hero-before-label{left:5px;bottom:5px;padding:4px 6px}}
